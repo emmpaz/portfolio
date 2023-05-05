@@ -1,0 +1,39 @@
+/*---------NAME STYLE-------- */
+.tom-container{
+    margin-top: 4%;
+    width: 100%;
+}
+
+.tom-container .tom{
+    font-size:calc(20px + 4vw);
+    margin: 0;
+}
+
+.paz-container{
+    width: 100%;
+}
+
+.paz-container .paz{
+    font-size:calc(20px + 4vw);
+    margin: 0;
+}
+
+.university-container{
+    width: 100%;
+}
+
+.university-container .university{
+    font-size:calc(20px + 4vw);
+    margin: 0;
+}
+
+.name-and-welome-container-flex p{
+    color: white;
+    transition-duration: .6s;
+}
+
+.name-and-welome-container-flex p:hover{
+    color: black;
+    transition-duration: .6s;
+}
+/*---------END NAME STYLE-------- */

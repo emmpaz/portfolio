@@ -1,0 +1,93 @@
+.HomeContainer{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+/*---------ICON STYLE--------*/
+.IconContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.IconContainer-flex{
+    display: flex;
+    margin-top: 2%;
+}
+
+.IconContainer-flex img{
+    width: 40px;
+    margin: 50px;
+    transition-duration: .6s;
+    
+}
+
+.IconContainer-flex img:hover{
+    width: 40px;
+    margin: 50px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    transition-duration: .6s;
+}
+/*--------END ICON STYLE--------*/
+
+.name-and-welome-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.name-and-welome-container-flex{
+    width: fit-content;
+}
+/*---------NAME STYLE-------- */
+.NameContainer{
+    margin-top: 4%;
+    width: 100%;
+}
+
+.HomeContainer .Name{
+    font-size: 130px;
+    margin: 0;
+    color: white;
+    transition-duration: .6s;
+}
+/*---------END NAME STYLE-------- */
+
+/*---------WELCOME STYLE-------- */
+.HomeContainer .welcome{
+    font-size: 40px;
+    margin: -60px 0 0 7px;
+    color: white;
+    transition-duration: .6s;
+}
+/*---------END WELCOME STYLE-------- */
+
+/*---------CATEGORY STYLE-------- */
+.CatergoryContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+.CatergoryContainer-flex{
+    display: flex;
+}
+
+.CatergoryContainer-flex p {
+    margin: 40px;
+    font-size: 25px;
+    color: white;
+    transition-duration: .6s;
+}
+.CatergoryContainer-flex p:hover {
+    margin: 40px;
+    font-size: 25px;
+    color: black;
+    transition-duration: .6s;
+}
+/*---------END CATERGORY STYLE-------- */

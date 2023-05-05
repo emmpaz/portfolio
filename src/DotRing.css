@@ -1,0 +1,33 @@
+  
+  .dot {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    transition-duration: .3s;
+    transition-property: transform, width, height;
+    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+  }
+
+  .dot.hovered{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    transition-duration: .3s;
+    transition-property: transform, width, height;
+    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+  }
+  
