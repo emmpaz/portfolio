@@ -89,5 +89,7 @@
     font-size: 25px;
     color: black;
     transition-duration: .6s;
+    background-color: white;
+    border-radius: 20%;
 }
 /*---------END CATERGORY STYLE-------- */
