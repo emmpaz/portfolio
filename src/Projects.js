@@ -5,10 +5,10 @@ import twitter from './icons/twitter-white.png';
 import { MouseContext } from "./mouse-context";
 import { useContext } from 'react';
 
-function Projects() {
+function Projects(props) {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return ( 
-        <div className='HomeContainer'>
+        <div className={(props.tomState) ? 'ProjectsContainerNone' :'ProjectsContainer'}>
         <div className='IconContainer'>
             <div className='IconContainer-flex'>
                 <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -23,7 +23,7 @@ function Projects() {
             <div className='name-and-welome-container-flex'>
                 <div className='tom-container'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
-                        onMouseLeave={() => cursorChangeHandler("")} className='tom'>tom concrete.</p>
+                        onMouseLeave={() => cursorChangeHandler("")} onClick={() => {props.setting()}} className='tom'>tom concrete.</p>
                 </div>
                 <div className='paz-container'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}

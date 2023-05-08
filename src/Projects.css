@@ -1,3 +1,22 @@
+.ProjectsContainer{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    transition-duration: .6s;
+    animation: fadeIn 5s;
+}
+
+.ProjectsContainerNone{
+    opacity: 0; 
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-out;
+}
+
 /*---------NAME STYLE-------- */
 .tom-container{
     margin-top: 4%;
@@ -33,7 +52,21 @@
 }
 
 .name-and-welome-container-flex p:hover{
-    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px 6px 4px 6px;
     transition-duration: .6s;
+    color: black;
 }
 /*---------END NAME STYLE-------- */
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}

@@ -4,8 +4,16 @@ import Home from './Home.js';
 import Projects from './Projects.js';
 import bg from './background-smaller.png';
 import DotRing from './DotRing';
+import About from './About';
+import Tom from './Tom';
+import { useState } from 'react';
 
 function App() {
+  const [tom, setTom] = useState(false);
+
+  const toggleHandler = () => {
+    setTom(!tom);
+  }
   return (
     <div className="App">
       <DotRing/>
@@ -18,10 +26,12 @@ function App() {
           <Home/>
         </div>
         <div className='section'>
-          <Projects/>
+          <Projects tomState={tom} setting={toggleHandler}/>
+            <Tom tomState={tom} setting={toggleHandler}/>
+          
         </div>
         <div className='section'>
-          TEST 3
+          <About/>
         </div>
       </div>
     </div>

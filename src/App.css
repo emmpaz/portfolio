@@ -16,9 +16,12 @@
 }
 
 .sectionContainer{
+  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  -ms-scroll-snap-destination: 0 0;
+  scroll-snap-destination: 0 0;
 }
 
 
@@ -32,4 +35,8 @@
   color: white;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+}
+
+.Tom-Container-subsection{
+  
 }
