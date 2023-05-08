@@ -1,4 +1,4 @@
-.HomeContainer{
+.home-container{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -7,25 +7,25 @@
     flex-direction: column;
 }
 /*---------ICON STYLE--------*/
-.IconContainer{
+.icon-container{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.IconContainer-flex{
+.icon-container-flex{
     display: flex;
     margin-top: 2%;
 }
 
-.IconContainer-flex img{
+.icon-container-flex img{
     width: 40px;
     margin: 50px;
     transition-duration: .6s;
     
 }
 
-.IconContainer-flex img:hover{
+.icon-container-flex img:hover{
     width: 40px;
     margin: 50px;
     -webkit-filter: invert(100%);
@@ -44,47 +44,60 @@
     width: fit-content;
 }
 /*---------NAME STYLE-------- */
-.NameContainer{
+.name-container{
     margin-top: 4%;
     width: 100%;
 }
 
-.HomeContainer .Name{
+.home-container .name{
     font-size: 130px;
     margin: 0;
     color: white;
     transition-duration: .6s;
 }
+
+.home-container .name:hover{
+    margin: 0;
+    color: black;
+    transition-duration: .6s;
+}
 /*---------END NAME STYLE-------- */
 
 /*---------WELCOME STYLE-------- */
-.HomeContainer .welcome{
+.home-container .welcome{
     font-size: 40px;
     margin: -60px 0 0 7px;
     color: white;
     transition-duration: .6s;
 }
+
+.home-container .welcome:hover{
+    font-size: 40px;
+    margin: -60px 0 0 7px;
+    color: black;
+    transition-duration: .6s;
+}
 /*---------END WELCOME STYLE-------- */
 
 /*---------CATEGORY STYLE-------- */
-.CatergoryContainer{
+.catergory-container{
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 8%;
 }
 
-.CatergoryContainer-flex{
+.catergory-container-flex{
     display: flex;
 }
 
-.CatergoryContainer-flex p {
+.catergory-container-flex p {
     margin: 40px;
     font-size: 25px;
     color: white;
     transition-duration: .6s;
 }
-.CatergoryContainer-flex p:hover {
+.catergory-container-flex p:hover {
     margin: 40px;
     font-size: 25px;
     color: black;

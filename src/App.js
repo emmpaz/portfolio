@@ -1,5 +1,5 @@
 
-import './App.css';
+import './css/App.css';
 import Home from './Home.js';
 import Projects from './Projects.js';
 import bg from './background-smaller.png';
@@ -7,28 +7,32 @@ import DotRing from './DotRing';
 import About from './About';
 import Tom from './Tom';
 import { useState } from 'react';
+import Paz from './Paz';
 
 function App() {
-  const [tom, setTom] = useState(false);
+  const [project, setProject] = useState({state: false, whichProject : ""});
 
-  const toggleHandler = () => {
-    setTom(!tom);
+  const toggleHandler = (which) => {
+    setProject(project => ({
+      state: !project.state,
+      whichProject: which
+    }));
   }
   return (
     <div className="App">
       <DotRing/>
-      <div className='bgContainer'>
+      <div className='bg-container'>
         <div className='black'></div>
         <img className='bg' src={bg}></img>
       </div>
-      <div className='sectionContainer'>
+      <div className='section-container'>
         <div className='section'>
           <Home/>
         </div>
         <div className='section'>
-          <Projects tomState={tom} setting={toggleHandler}/>
-            <Tom tomState={tom} setting={toggleHandler}/>
-          
+          <Projects tomState={project} setting={toggleHandler}/>
+          {(project.whichProject === "tom") ? <Tom tomState={project} setting={toggleHandler}/> : <></>}
+          {(project.whichProject === "paz") ? <Paz pazState={project} setting={toggleHandler}/> : <></>}
         </div>
         <div className='section'>
           <About/>

@@ -1,4 +1,4 @@
-import './Projects.css';
+import './css/Projects.css';
 import github from './icons/github-white.png';
 import linkedin from './icons/linkedin-white.png';
 import twitter from './icons/twitter-white.png';
@@ -8,9 +8,9 @@ import { useContext } from 'react';
 function Projects(props) {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return ( 
-        <div className={(props.tomState) ? 'ProjectsContainerNone' :'ProjectsContainer'}>
-        <div className='IconContainer'>
-            <div className='IconContainer-flex'>
+        <div className={(props.tomState.state) ? 'ProjectsContainerNone' :'ProjectsContainer'}>
+        <div className='icon-container'>
+            <div className='icon-container-flex'>
                 <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")}  src={github} />
                 <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -19,15 +19,15 @@ function Projects(props) {
                         onMouseLeave={() => cursorChangeHandler("")}  src={twitter} />
             </div>
         </div>
-        <div className='name-and-welome-container'>
-            <div className='name-and-welome-container-flex'>
+        <div className='projects-list-container'>
+            <div className='projects-list-container-flex'>
                 <div className='tom-container'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
-                        onMouseLeave={() => cursorChangeHandler("")} onClick={() => {props.setting()}} className='tom'>tom concrete.</p>
+                        onMouseLeave={() => cursorChangeHandler("")} onClick={() => {props.setting("tom")}} className='tom'>tom concrete.</p>
                 </div>
                 <div className='paz-container'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
-                        onMouseLeave={() => cursorChangeHandler("")} className='paz'>paz construction.</p>
+                        onMouseLeave={() => cursorChangeHandler("")} onClick={() => {props.setting("paz")}} className='paz'>paz construction.</p>
                 </div>
                  <div className='university-container'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}

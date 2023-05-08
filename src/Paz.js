@@ -4,13 +4,13 @@ import twitter from './icons/twitter-white.png';
 import { MouseContext } from "./mouse-context";
 import { useContext } from 'react';
 import './css/Tom.css';
-import logo from './Tom Concrete-13.png';
+import logo from './logo.png';
 
-function Tom(props) {
+function Paz(props) {
 
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
-        <div className={(props.tomState.state) ? 'TomContainer' : 'TomContainerNone'}>
+        <div className={(props.pazState.state) ? 'TomContainer' : 'TomContainerNone'}>
             <div className='icon-container'>
                 <div className='icon-container-flex'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -47,4 +47,4 @@ function Tom(props) {
     );
 }
 
-export default Tom;
+export default Paz;

@@ -1,4 +1,4 @@
-import "./DotRing.css";
+import "./css/DotRing.css";
 import useMousePosition from "./cursor";
 import { MouseContext } from "./mouse-context";
 import { useContext } from "react";

@@ -1,4 +1,4 @@
-import './Home.css';
+import './css/Home.css';
 import github from './icons/github-white.png';
 import linkedin from './icons/linkedin-white.png';
 import twitter from './icons/twitter-white.png';
@@ -8,9 +8,9 @@ import { useContext } from 'react';
 function Home() {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
-        <div className='HomeContainer'>
-            <div className='IconContainer'>
-                <div className='IconContainer-flex'>
+        <div className='home-container'>
+            <div className='icon-container'>
+                <div className='icon-container-flex'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={github} />
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -21,16 +21,16 @@ function Home() {
             </div>
             <div className='name-and-welome-container'>
                 <div className='name-and-welome-container-flex'>
-                    <div className='NameContainer'>
-                        <p className='Name'>emmanuel</p>
+                    <div className='name-container'>
+                        <p className='name'>emmanuel</p>
                     </div>
-                    <div className='WelcomeContainer'>
+                    <div className='welcome-container'>
                         <p className='welcome'>welcome to my portfolio.</p>
                     </div>
                 </div>
             </div>
-            <div className='CatergoryContainer'>
-                <div className='CatergoryContainer-flex'>
+            <div className='catergory-container'>
+                <div className='catergory-container-flex'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")}>projects</p>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}

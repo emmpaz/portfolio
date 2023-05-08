@@ -6,7 +6,7 @@
     width: 100vw;
     flex-direction: column;
     transition-duration: .6s;
-    animation: fadeIn 5s;
+    animation: fadeIn 2s;
 }
 
 .ProjectsContainerNone{
@@ -46,12 +46,22 @@
     margin: 0;
 }
 
-.name-and-welome-container-flex p{
+.projects-list-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-list-container-flex{
+    width: fit-content;
+}
+
+.projects-list-container-flex p{
     color: white;
     transition-duration: .6s;
 }
 
-.name-and-welome-container-flex p:hover{
+.projects-list-container-flex p:hover{
     background-color: white;
     border-radius: 10px;
     padding: 4px 6px 4px 6px;

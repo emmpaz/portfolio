@@ -1,4 +1,4 @@
-import './About.css';
+import './css/About.css';
 import github from './icons/github-white.png';
 import linkedin from './icons/linkedin-white.png';
 import twitter from './icons/twitter-white.png';
@@ -8,9 +8,9 @@ import { useContext } from 'react';
 function About() {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
-        <div className='HomeContainer'>
-            <div className='IconContainer'>
-                <div className='IconContainer-flex'>
+        <div className='home-container'>
+            <div className='icon-container'>
+                <div className='icon-container-flex'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={github} />
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}

@@ -15,7 +15,7 @@
   bottom: 0px;
 }
 
-.sectionContainer{
+.section-container{
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
