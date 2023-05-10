@@ -1,0 +1,33 @@
+.paz-container-display{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    transition-duration: .6s;
+    animation: fadeIn 2s;
+}
+
+
+.paz-container-none{
+    display: none;
+    transition-duration: .6s;
+    animation: fadeOut 2s;
+}
+
+.logo-container-paz{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container-link-paz{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container-paz img{
+    width: 10%;
+}

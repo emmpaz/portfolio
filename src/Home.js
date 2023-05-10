@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import './css/Home.css';
 import github from './icons/github-white.png';
 import linkedin from './icons/linkedin-white.png';
@@ -7,6 +8,12 @@ import { useContext } from 'react';
 
 function Home() {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const navigate = useNavigate();
+
+    const projectHandler = () => {
+        navigate("/projects");
+    }
+
     return (
         <div className='home-container'>
             <div className='icon-container'>
@@ -32,7 +39,7 @@ function Home() {
             <div className='catergory-container'>
                 <div className='catergory-container-flex'>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
-                        onMouseLeave={() => cursorChangeHandler("")}>projects</p>
+                        onMouseLeave={() => cursorChangeHandler("")} onClick={() => {projectHandler()}}>projects</p>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")}>about</p>
                     <p onMouseEnter={() => cursorChangeHandler("hovered")}

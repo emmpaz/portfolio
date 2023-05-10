@@ -2,13 +2,23 @@ import './css/Projects.css';
 import github from './icons/github-white.png';
 import linkedin from './icons/linkedin-white.png';
 import twitter from './icons/twitter-white.png';
+import bg from './background-smaller.png';
+import DotRing from './DotRing';
 import { MouseContext } from "./mouse-context";
 import { useContext } from 'react';
 
 function Projects(props) {
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-    return ( 
-        <div className={(props.tomState.state) ? 'ProjectsContainerNone' :'ProjectsContainer'}>
+    return (
+        <div className="App">
+      <DotRing/>
+      <div className='bg-container'>
+        <div className='black'></div>
+        <img className='bg' src={bg}></img>
+      </div>
+      <div className='section-container'>
+        <div className='section'>
+        <div className={'projects-container'}>
         <div className='icon-container'>
             <div className='icon-container-flex'>
                 <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -36,6 +46,9 @@ function Projects(props) {
             </div>
         </div>
     </div>
+    </div>
+      </div>
+    </div> 
     );
 }
 

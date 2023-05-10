@@ -10,7 +10,7 @@ function Tom(props) {
 
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
-        <div className={(props.tomState.state) ? 'TomContainer' : 'TomContainerNone'}>
+        <div className={(props.tomState.state) ? 'tom-container-display' : 'tom-container-none'}>
             <div className='icon-container'>
                 <div className='icon-container-flex'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -26,8 +26,8 @@ function Tom(props) {
                     onMouseLeave={() => cursorChangeHandler("")} onClick={() => { props.setting("") }}>BACK</p>
             </div>
             <div className='content-container'>
-                <div className='logo-container'>
-                    <a href='https://tomconcrete.co' target="_blank" className='logo-container-link'>
+                <div className='logo-container-tom'>
+                    <a href='https://tomconcrete.co' target="_blank" className='logo-container-link-tom'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={logo} />
                     </a>

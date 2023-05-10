@@ -1,4 +1,4 @@
-.TomContainer{
+.tom-container-display{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -9,7 +9,7 @@
     animation: fadeIn 2s;
 }
 
-.TomContainerNone{
+.tom-container-none{
     display: none;
     transition-duration: .6s;
     animation: fadeOut 2s;
@@ -65,19 +65,19 @@
     flex-direction: column;
 }
 
-.logo-container{
+.logo-container-tom{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.logo-container-link{
+.logo-container-link-tom{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.logo-container img{
+.logo-container-tom img{
     width: 50%;
 }
 

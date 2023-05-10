@@ -1,4 +1,4 @@
-.ProjectsContainer{
+.projects-container{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -9,7 +9,7 @@
     animation: fadeIn 2s;
 }
 
-.ProjectsContainerNone{
+.projects-container-none{
     opacity: 0; 
     height: 0;
     width: 0;

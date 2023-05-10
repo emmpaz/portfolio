@@ -3,14 +3,14 @@ import linkedin from './icons/linkedin-white.png';
 import twitter from './icons/twitter-white.png';
 import { MouseContext } from "./mouse-context";
 import { useContext } from 'react';
-import './css/Tom.css';
+import './css/Paz.css';
 import logo from './logo.png';
 
 function Paz(props) {
 
     const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
-        <div className={(props.pazState.state) ? 'TomContainer' : 'TomContainerNone'}>
+        <div className={(props.pazState.state) ? 'paz-container-display' : 'paz-container-none'}>
             <div className='icon-container'>
                 <div className='icon-container-flex'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -26,8 +26,8 @@ function Paz(props) {
                     onMouseLeave={() => cursorChangeHandler("")} onClick={() => { props.setting("") }}>BACK</p>
             </div>
             <div className='content-container'>
-                <div className='logo-container'>
-                    <a href='https://tomconcrete.co' target="_blank" className='logo-container-link'>
+                <div className='logo-container-paz'>
+                    <a href='https://tomconcrete.co' target="_blank" className='logo-container-link-paz'>
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={logo} />
                     </a>
