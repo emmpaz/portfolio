@@ -18,13 +18,24 @@
 }
 
 /*---------NAME STYLE-------- */
+
+.projects-to-home-container{
+    display: flex;
+    justify-content: center;
+}
+
+.projects-to-home-container p{
+    color: white;
+    transition-duration: .6s;
+}
+
 .tom-container{
     margin-top: 4%;
     width: 100%;
 }
 
 .tom-container .tom{
-    font-size:calc(20px + 4vw);
+    font-size:calc(20px + 1vw);
     margin: 0;
 }
 
@@ -33,7 +44,7 @@
 }
 
 .paz-container .paz{
-    font-size:calc(20px + 4vw);
+    font-size:calc(20px + 1vw);
     margin: 0;
 }
 
@@ -42,7 +53,7 @@
 }
 
 .university-container .university{
-    font-size:calc(20px + 4vw);
+    font-size:calc(20px + 1vw);
     margin: 0;
 }
 
@@ -50,10 +61,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .projects-list-container-flex{
     width: fit-content;
+    
 }
 
 .projects-list-container-flex p{
@@ -61,12 +74,29 @@
     transition-duration: .6s;
 }
 
-.projects-list-container-flex p:hover{
+.more-to-come-container p {
+    font-weight: 300;
+}
+ 
+.tom-container p:hover, .paz-container p:hover, .university-container p:hover, .projects-to-home-container p:hover{
     background-color: white;
     border-radius: 10px;
     padding: 4px 6px 4px 6px;
     transition-duration: .6s;
     color: black;
+}
+
+
+.projects-description-flex{
+    display: flex;
+    align-items: center;
+    
+    margin-left: 90px;
+}
+
+.projects-description-flex p{
+    max-width: 400px;
+    font-weight: 300;
 }
 /*---------END NAME STYLE-------- */
 

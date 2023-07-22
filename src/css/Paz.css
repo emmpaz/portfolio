@@ -31,3 +31,8 @@
 .logo-container-paz img{
     width: 10%;
 }
+
+.description-container p{
+    max-width: 400px;
+
+}

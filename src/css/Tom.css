@@ -109,7 +109,7 @@
 }
 
 .description-container p{
-    font-size: 20px;
+    max-width: 400px;
 }
 
 

@@ -1,4 +1,35 @@
 .about-container{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    transition-duration: .6s;
+    animation: fadeIn 2s;
+}
+
+
+.about-to-home-container{
+    display: flex;
+    justify-content: center;
+}
+
+.about-to-home-container p{
+    color: white;
+    transition-duration: .6s;
+}
+
+.about-to-home-container p:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px 6px 4px 6px;
+    transition-duration: .6s;
+    color: black;
+}
+
+
+.about-content-container{
     width: 100%;
     display: flex;
     justify-content: center;
