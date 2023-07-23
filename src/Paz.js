@@ -58,7 +58,10 @@ function Paz(props) {
                                 </div>
                                 <div className='description-container'>
                                     <p className='description-title'>description</p>
-                                    <p>I designed this website using Figma. Once designed, I developed this site using React. </p>
+                                    <p>My client needed an online presence and I wanted to learn React so I decided to create this site for them.
+                                        I also helped this company, have a presence on Google which has helped their growth.
+                                        I started my designing processing in Figma. I believe I wanted a more simplistic feel for this website, that
+                                        is why I chose the topography and one page design. </p>
                                 </div>
                             </div>
                         </div>

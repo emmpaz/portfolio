@@ -55,8 +55,10 @@ function Projects(props) {
                                         onMouseLeave={() => cursorChangeHandler("")} onClick={() => { navigate("/projects/paz"); cursorChangeHandler("") }} className='paz'>paz construction.</p>
                                 </div>
                                 <div className='university-container'>
+                                <a href='https://github.com/emmpaz' target="_blank" className='logo-container-link-paz>' style={{textDecoration : 'none'}}>
                                     <p onMouseEnter={() => cursorChangeHandler("hovered")}
-                                        onMouseLeave={() => cursorChangeHandler("")} className='university'>university projects.</p>
+                                        onMouseLeave={() => cursorChangeHandler("")} className='university'>other projects.</p>
+                                </a>
                                 </div>
                                 <div className='more-to-come-container'>
                                     <p>more to come.</p>
@@ -67,7 +69,8 @@ function Projects(props) {
                                     here are some of my projects
                                     that i have designed and developed.
                                     most of these are my start to
-                                    web designing.
+                                    web designing. my other projects directs you to all my github
+                                    which contains university projects, personal projects and my internship project.
                                 </p>
                             </div>
                         </div>

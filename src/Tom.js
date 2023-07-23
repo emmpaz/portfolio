@@ -58,7 +58,9 @@ function Tom(props) {
                                 </div>
                                 <div className='description-container'>
                                     <p className='description-title'>description</p>
-                                    <p>I closely communicated with this client to figure out color scheme, content, topography. I designed this website using Figma and kept the client updated/showed mockups. I developed this site with React.</p>
+                                    <p>I closely communicated with this client to figure out color scheme, content, topography.
+                                         I designed this website using Figma and kept the client updated/showed mockups.
+                                         With some new knowledge gained in React with React Router and sending data through the Router.</p>
                                 </div>
                             </div>
                         </div>
