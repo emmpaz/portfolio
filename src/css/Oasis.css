@@ -9,7 +9,14 @@
     animation: fadeIn 2s;
 }
 
-.logo-container-paz{
+
+.paz-container-none{
+    display: none;
+    transition-duration: .6s;
+    animation: fadeOut 2s;
+}
+
+.logo-container-oasis{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -21,8 +28,8 @@
     justify-content: center;
 }
 
-.logo-container-paz img{
-    width: 10%;
+.logo-container-oasis img{
+    width: 20%;
 }
 
 .description-container p{

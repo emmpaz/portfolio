@@ -48,6 +48,17 @@
     margin: 0;
 }
 
+
+.oasis-container{
+    width: 100%;
+}
+
+.oasis-container .oasis{
+    font-size:calc(20px + 1vw);
+    margin: 0;
+}
+
+
 .university-container{
     width: 100%;
 }
@@ -78,7 +89,7 @@
     font-weight: 300;
 }
  
-.tom-container p:hover, .paz-container p:hover, .university-container p:hover, .projects-to-home-container p:hover{
+.tom-container p:hover, .paz-container p:hover, .oasis-container p:hover, .university-container p:hover, .projects-to-home-container p:hover{
     background-color: white;
     border-radius: 10px;
     padding: 4px 6px 4px 6px;

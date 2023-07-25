@@ -1,0 +1,74 @@
+import github from './icons/github-white.png';
+import linkedin from './icons/linkedin-white.png';
+import twitter from './icons/twitter-white.png';
+import { MouseContext } from "./mouse-context";
+import { useContext } from 'react';
+import bg from './background-smaller.png';
+import DotRing from './DotRing';
+import './css/Oasis.css';
+import logo from './oasis.png';
+import { useNavigate } from 'react-router-dom';
+
+function Oasis(props) {
+
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const navigate = useNavigate();
+
+    return (
+        <div className='App'>
+            <DotRing />
+            <div className='bg-container'>
+                <div className='black'></div>
+                <img className='bg' src={bg}></img>
+            </div>
+            <div className='section-container'>
+                <div className='section'>
+                    <div className='paz-container-display'>
+                        <div className='icon-container'>
+                            <div className='icon-container-flex'>
+                                <a href='https://github.com/emmpaz' target="_blank" className='logo-container-link-paz'>
+                                    <img onMouseEnter={() => cursorChangeHandler("hovered")}
+                                        onMouseLeave={() => cursorChangeHandler("")} src={github} />
+                                </a>
+                                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" className='logo-container-link-paz'>
+                                    <img onMouseEnter={() => cursorChangeHandler("hovered")}
+                                        onMouseLeave={() => cursorChangeHandler("")} src={linkedin} />
+                                </a>
+                                <a href='https://twitter.com/swe_emmanuel' target="_blank" className='logo-container-link-paz>'>
+                                    <img onMouseEnter={() => cursorChangeHandler("hovered")}
+                                        onMouseLeave={() => cursorChangeHandler("")} src={twitter} />
+                                </a>
+                            </div>
+                        </div>
+                        <div className='back-container'>
+                            <p onMouseEnter={() => cursorChangeHandler("hovered")}
+                                onMouseLeave={() => cursorChangeHandler("")} onClick={() => { navigate("/projects"); cursorChangeHandler("") }}>BACK</p>
+                        </div>
+                        <div className='content-container'>
+                            <div className='logo-container-oasis'>
+                                <a href='https://oasiscoffeeshop.co' target="_blank" className='logo-container-link-paz'>
+                                    <img onMouseEnter={() => cursorChangeHandler("hovered")}
+                                        onMouseLeave={() => cursorChangeHandler("")} src={logo} />
+                                </a>
+                            </div>
+                            <div className='text-container'>
+                                <div className='role-container'>
+                                    <p className='role-title'>role</p>
+                                    <p>web developer</p>
+                                </div>
+                                <div className='description-container'>
+                                    <p className='description-title'>description</p>
+                                    <p>This is a website for my coffee shop business. I wanted to make sure this site embodded
+                                        the mission statement we had for this place. I have used figma to design this website and
+                                        currently am coding in React. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Oasis;
