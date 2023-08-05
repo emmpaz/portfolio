@@ -24,11 +24,11 @@ function About() {
                     <div className='about-container'>
                         <div className='icon-container'>
                             <div className='icon-container-flex'>
-                            <a href='https://github.com/emmpaz' target="_blank" className='logo-container-link-paz'>
+                            <a href='https://github.com/emmpaz' target="_blank" >
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={github} />
                 </a>
-                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" className='logo-container-link-paz'>
+                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" >
                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                         onMouseLeave={() => cursorChangeHandler("")} src={linkedin} />
                 </a>
@@ -47,8 +47,8 @@ function About() {
                         <div className='about-content-container'>
                             <div className='about'>
                                 my name is emmanuel paz and i am a developer
-                                turned web designer. I began designing in 2022 with degree in software engineering. My vision for creating designs
-                                is to potray my clients vision in an aesthetic design.
+                                turned web designer. i began designing in 2022 with degree in software engineering. my vision for creating designs
+                                is to portray my clients vision in an aesthetic design.
                             </div>
                         </div>
                     </div>

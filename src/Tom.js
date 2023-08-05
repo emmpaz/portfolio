@@ -26,11 +26,11 @@ function Tom(props) {
                     <div className='tom-container-display'>
                         <div className='icon-container'>
                             <div className='icon-container-flex'>
-                                <a href='https://github.com/emmpaz' target="_blank" className='logo-container-link-paz'>
+                                <a href='https://github.com/emmpaz' target="_blank" >
                                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                                         onMouseLeave={() => cursorChangeHandler("")} src={github} />
                                 </a>
-                                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" className='logo-container-link-paz'>
+                                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" >
                                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                                         onMouseLeave={() => cursorChangeHandler("")} src={linkedin} />
                                 </a>

@@ -26,11 +26,11 @@ function Oasis(props) {
                     <div className='paz-container-display'>
                         <div className='icon-container'>
                             <div className='icon-container-flex'>
-                                <a href='https://github.com/emmpaz' target="_blank" className='logo-container-link-paz'>
+                                <a href='https://github.com/emmpaz' target="_blank" >
                                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                                         onMouseLeave={() => cursorChangeHandler("")} src={github} />
                                 </a>
-                                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" className='logo-container-link-paz'>
+                                <a href='https://www.linkedin.com/in/emmanuelpaz23/' target="_blank" >
                                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                                         onMouseLeave={() => cursorChangeHandler("")} src={linkedin} />
                                 </a>
@@ -46,7 +46,7 @@ function Oasis(props) {
                         </div>
                         <div className='content-container'>
                             <div className='logo-container-oasis'>
-                                <a href='https://oasiscoffeeshop.co' target="_blank" className='logo-container-link-paz'>
+                                <a href='https://oasiscoffeeshop.co' target="_blank" >
                                     <img onMouseEnter={() => cursorChangeHandler("hovered")}
                                         onMouseLeave={() => cursorChangeHandler("")} src={logo} />
                                 </a>
