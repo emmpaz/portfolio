@@ -28,8 +28,11 @@
     justify-content: center;
 }
 
-.logo-container-oasis img{
+.logo-container-oasis a{
     width: 20%;
+}
+.logo-container-oasis img{
+    width: 100%;
 }
 
 .description-container p{
