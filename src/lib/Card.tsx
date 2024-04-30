@@ -5,14 +5,13 @@ function Card(
     {
         title,
         timeline,
-        bullets,
         location,
         company
     }:
     {
         title: string,
         timeline: string,
-        bullets: string[],
+        bullets?: string[],
         location: string,
         company: string
     }
