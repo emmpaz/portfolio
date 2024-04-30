@@ -5,20 +5,40 @@ import About from './sections/About'
 import Hero from './sections/Hero'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
+import { useInView } from 'react-intersection-observer'
 
 
 function App() {
 
+  const [heroRef, heroInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  })
+
+  const [aboutRef, aboutInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  })
+
+  const [experienceRef, experienceInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  })
+
+  const [contactRef, contactInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  })
 
   return (
     <Background>
-      <Hero/>
-      <div className='h-48 w-full'/>
-      <About/>
-      <div className='h-48 w-full'/>
-      <Experience/>
-      <div className='h-48 w-full'/>
-      <Contact/>
+      <Hero reference={heroRef} inView={heroInView} />
+      <div className="h-48 w-full" />
+      <About reference={aboutRef} inView={aboutInView} />
+      <div className="h-48 w-full" />
+      <Experience reference={experienceRef} inView={experienceInView} />
+      <div className="h-48 w-full" />
+      <Contact reference={contactRef} inView={contactInView} />
     </Background>
   )
 }

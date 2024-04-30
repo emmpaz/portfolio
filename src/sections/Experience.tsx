@@ -2,10 +2,12 @@ import Card from "../lib/Card";
 import resume from '../assets/Emmanuel_Paz_Resume.pdf';
 
 
-function Experience(){
+function Experience({ reference, inView }: { reference: any; inView: boolean }){
 
     return(
-        <div className="h-screen w-full">
+        <div className={`h-screen w-full grid section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${
+            inView ? 'opacity-100 translate-y-0' : ''
+        }}`} ref={reference}>
             <div className="w-full h-full font-incon text-slate-50 flex justify-center items-center flex-col sm:flex-row ">
                 <div className="w-1/2 max-w-md">
                     {/* <Card

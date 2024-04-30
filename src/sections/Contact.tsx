@@ -3,10 +3,12 @@ import spotify from '../assets/spotify.png';
 import linkedin from '../assets/linkedin.png';
 import git from '../assets/git.png';
 
-function Contact(){
+function Contact({ reference, inView }: { reference: any; inView: boolean }){
     return(
-        <div className="h-screen w-full font-incon text-slate-50">
-            <div className="h-full w-full flex justify-center items-center">
+        <div className={`h-screen w-full grid section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${
+            inView ? 'opacity-100 translate-y-0' : ''
+        }}`} ref={reference}>
+            <div className="h-full w-full flex justify-center items-center text-slate-50 font-incon">
                 <div className='pr-2 w-96'>
                     <p className="text-2xl py-2">Contact</p>
                     <p className='text-sm'>Connect with me on Linkedin and follow my Spotify account to see what I listen to while coding, working out, on a plane</p>
