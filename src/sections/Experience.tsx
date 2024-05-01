@@ -9,7 +9,7 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
             inView ? 'opacity-100 translate-y-0' : ''
         }}`} ref={reference}>
             <div className="w-full h-full font-incon text-slate-50 flex justify-center items-center flex-col sm:flex-row ">
-                <div className="w-1/2 max-w-md">
+                <div className="w-1/2 max-w-xl min-w-80 flex flex-col items-center">
                     {/* <Card
                         title="Developer Support Engineer"
                         timeline="Aug. 2024 - Present"

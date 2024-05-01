@@ -18,7 +18,7 @@ function Card(
 ){
 
     return(
-        <div className=" w-10/12 border-l pl-2 my-5">
+        <div className=" w-10/12 border-l pl-2 my-2">
             <div className="flex justify-between">
                 <p className="text-xs">{timeline}</p>
                 <p className="text-sm opacity-50">{location}</p>
