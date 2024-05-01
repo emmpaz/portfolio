@@ -5,7 +5,7 @@ import git from '../assets/icons/git.png';
 
 function Contact({ reference, inView }: { reference: any; inView: boolean }){
     return(
-        <div className={`h-screen w-full grid section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${
+        <div className={` h-screen w-full grid grid-rows-1 section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${
             inView ? 'opacity-100 translate-y-0' : ''
         }}`} ref={reference}>
             <div className="h-full w-full flex-col flex sm:flex-row justify-center items-center text-slate-50 font-incon">
@@ -24,7 +24,9 @@ function Contact({ reference, inView }: { reference: any; inView: boolean }){
                         <img src={git} className="h-10 w-10 m-3"/>
                     </a>
                 </div>
-
+            </div>
+            <div className="h-fit self-end text-slate-50 font-incon grid justify-center pb-2">
+                    emmanuel paz © 2024
             </div>
         </div>
     )
