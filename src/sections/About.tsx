@@ -7,7 +7,7 @@ import me from '../assets/pics/me.png';
 
 function About({ reference, inView }: { reference: any; inView: boolean }) {
     return (
-        <div className={`h-screen w-full grid section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${inView ? 'opacity-100 translate-y-0' : ''
+        <div className={`min-h-screen w-full grid section opacity-0 transform transition duration-2000 ease-out ${inView ? 'opacity-100 translate-y-0' : ''
             }}`} ref={reference}>
             <div className="flex justify-center items-center md:flex-row flex-col">
                 <div className="text-slate-50 font-incon flex flex-col justify-center items-center md:w-1/2 h-full p-10">
@@ -16,6 +16,9 @@ function About({ reference, inView }: { reference: any; inView: boolean }) {
                         <p className=" text-center">
                             After graduting in May '23 from Iowa State and a grewsome job search,
                             I am proud to start my Software Engineering career at Okta as a DSA (Developer Support Associate).
+                        </p>
+                        <p className='pt-5 text-center'>
+                            I enjoy full-stack developement, but I am currently focusing on gaining a deeper understanding in frontend developement (Next.js) and cloud deployment with CI/CD.
                         </p>
                         <p className="pt-5 text-center">
                             I am from a small town from Kansas, moved to Chicago and now moving to Salt Lake City.

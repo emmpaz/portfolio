@@ -37,17 +37,27 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             githubLink: "https://github.com/emmpaz/tomconstruction",
             website: true,
             link: "https://tomconcrete.co/"
+        },
+        {
+            title: "Oasis Coffee Shop",
+            description: "Website for my coffee shop",
+            tags: [
+                "React"
+            ],
+            githubLink: "https://github.com/oasiscoffee/oasis",
+            website: true,
+            link: "https://oasiscoffeeshop.co"
         }
 
     ]
     return(
-        <div className={`h-screen w-full grid section opacity-0 transform translate-y-20 transition duration-2000 ease-out ${
+        <div className={`min-h-screen w-full grid section opacity-0 transform transition duration-2000 ease-out ${
             inView ? 'opacity-100 translate-y-0' : ''
         }}`} ref={reference}>
             <div className="h-full w-full flex text-slate-50 font-incon justify-center">
                 <div className="flex flex-col items-center max-w-5xl">
-                    <h1>Projects</h1>
-                    <div className="grid grid-cols-2 md:grid-cols-3">
+                    <h1 className="text-2xl">Projects</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                         {
                             projects.map(i =>  <ProjectCard {...i}/>)
                         }
