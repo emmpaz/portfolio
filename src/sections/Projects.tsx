@@ -48,8 +48,8 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             website: true,
             link: "https://oasiscoffeeshop.co"
         }
-
     ]
+    
     return(
         <div className={`min-h-screen w-full grid section opacity-0 transform transition duration-2000 ease-out ${
             inView ? 'opacity-100 translate-y-0' : ''

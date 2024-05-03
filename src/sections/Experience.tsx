@@ -34,6 +34,8 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="Chicago, IL"
                         company="Data Annotation"
+                        delay={0}
+                        inView={inView}
                     />
                     <Card
                         title="Web Developer"
@@ -45,6 +47,8 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="United States"
                         company="Tom Concrete LLC"
+                        delay={400}
+                        inView={inView}
                     />
                     <Card
                         title="Software Engineering Intern"
@@ -57,6 +61,8 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="Chicago, IL"
                         company="Publicis Sapient"
+                        delay={700}
+                        inView={inView}
                     />
                 </div>
                 <div className="mt-10 sm:mt-0">
