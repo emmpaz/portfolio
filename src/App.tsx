@@ -7,7 +7,6 @@ import Experience from './sections/Experience'
 import Contact from './sections/Contact'
 import { useInView } from 'react-intersection-observer'
 import Projects from './sections/Projects'
-import Blog from './sections/Blog'
 
 
 function App() {
@@ -27,10 +26,10 @@ function App() {
     triggerOnce: false,
   })
 
-  const [blogReference, blogInView] = useInView({
-    threshold: 0.4,
-    triggerOnce: false,
-  })
+  // const [blogReference, blogInView] = useInView({
+  //   threshold: 0.4,
+  //   triggerOnce: false,
+  // })
 
   const [contactRef, contactInView] = useInView({
     threshold: 0.4,
