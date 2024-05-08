@@ -47,6 +47,16 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             githubLink: "https://github.com/oasiscoffee/oasis",
             website: true,
             link: "https://oasiscoffeeshop.co"
+        },
+        {
+            title: "URL Shortener",
+            description: "A url shortener with an expiration option",
+            tags: [
+                "Next.js", "Tailwind", "Redis DB"
+            ],
+            githubLink: "https://github.com/emmpaz/url-shortener",
+            website: true,
+            link: "https://shrt3r.netlify.app/"
         }
     ]
     
