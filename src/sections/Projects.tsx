@@ -32,7 +32,7 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             title: "Tom Concrete LLC",
             description: "Website for a construction company",
             tags: [
-                "React"
+                "Next.js", "CDN (Cloudinary)"
             ],
             githubLink: "https://github.com/emmpaz/tomconstruction",
             website: true,
