@@ -57,6 +57,16 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             githubLink: "https://github.com/emmpaz/url-shortener",
             website: true,
             link: "https://shrt3r.netlify.app/"
+        },
+        {
+            title: "Aura",
+            description: "A minimilistic music player for work",
+            tags: [
+                "Next.js", "Tailwind", "Auth0", "Google Apis", "Framer"
+            ],
+            githubLink : "https://github.com/emmpaz/Aura",
+            website: true,
+            link: "https://auramusic.netlify.app/"
         }
     ]
     
