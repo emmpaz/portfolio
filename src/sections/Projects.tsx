@@ -69,7 +69,7 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
         },
         {
             title: "Aura",
-            description: "A minimilistic music player for work",
+            description: "A minimalistic music player for work",
             tags: [
                 "Next.js", "Tailwind", "Auth0", "Google Apis", "Framer"
             ],
