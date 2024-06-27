@@ -1,6 +1,15 @@
 import ProjectCard from "../lib/ProjectCard";
+import { motion } from "framer-motion";
 
 
+const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // Controls the delay between each child animation
+      },
+    },
+  };
 
 function Projects({ reference, inView }: { reference: any; inView: boolean }){
     const projects = [
@@ -77,11 +86,15 @@ function Projects({ reference, inView }: { reference: any; inView: boolean }){
             <div className="h-full w-full flex text-slate-50 font-incon justify-center">
                 <div className="flex flex-col items-center max-w-5xl">
                     <h1 className="text-2xl">Projects</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                    <motion.div 
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+                        variants={container}
+                        animate={inView  ? 'visible' : 'hidden'}
+                        >
                         {
                             projects.map(i =>  <ProjectCard {...i}/>)
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

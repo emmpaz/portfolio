@@ -1,15 +1,26 @@
 import Card from "../lib/Card";
 import resume from '../assets/Emmanuel_Paz_Resume.pdf';
+import { motion } from "framer-motion";
 
+const container = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.2, // Controls the delay between each child animation
+        },
+    },
+};
 
-function Experience({ reference, inView }: { reference: any; inView: boolean }){
+function Experience({ reference, inView }: { reference: any; inView: boolean }) {
 
-    return(
-        <div className={`min-h-screen w-full grid section opacity-0 transform transition duration-2000 ease-out ${
-            inView ? 'opacity-100 translate-y-0' : ''
-        }}`} ref={reference}>
+    return (
+        <motion.div className={`min-h-screen w-full grid section opacity-0 transform transition duration-2000 ease-out ${inView ? 'opacity-100 translate-y-0' : ''
+            }}`} ref={reference}>
             <div className="w-full h-full font-incon text-slate-50 flex justify-center items-center flex-col sm:flex-row ">
-                <div className="w-1/2 max-w-xl min-w-80 flex flex-col items-center">
+                <motion.div 
+                    variants={container}
+                    animate={inView ? 'visible' : 'hidden'}
+                    className="w-1/2 max-w-xl min-w-80 flex flex-col items-center">
                     {/* <Card
                         title="Developer Support Engineer"
                         timeline="Aug. 2024 - Present"
@@ -26,7 +37,7 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                     <Card
                         title="Prompt Engineer"
                         timeline="Dec. 2023 - Present"
-                        bullets = {[
+                        bullets={[
                             "Developed coding problems and solutions for training multiple LLM coding chatbots for performing data analytics",
                             "Evaluated code quality produced by AI models for correctness, performance, and helpfulness to the user",
                             "Train models with languages including Python, Javascript, C++, NodeJS, ReactJS, and ExpressJS",
@@ -34,7 +45,6 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="Chicago, IL"
                         company="Data Annotation"
-                        delay={0}
                         inView={inView}
                     />
                     <Card
@@ -47,7 +57,6 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="United States"
                         company="Tom Concrete LLC"
-                        delay={400}
                         inView={inView}
                     />
                     <Card
@@ -61,15 +70,14 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }){
                         ]}
                         location="Chicago, IL"
                         company="Publicis Sapient"
-                        delay={700}
                         inView={inView}
                     />
-                </div>
+                </motion.div>
                 <div className="mt-10 sm:mt-0">
                     <p>See <a href={resume} target="_blank" className=" underline">resume</a> for details</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

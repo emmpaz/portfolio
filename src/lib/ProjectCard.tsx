@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import git from '../assets/icons/git.png';
 import ext from '../assets/icons/link.png';
 
@@ -10,9 +11,21 @@ interface ProjectCardProps {
     link ?: string;
 }
 
+const item = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
 function ProjectCard({ title, description, tags, githubLink, website, link }: ProjectCardProps) {
     return (
-        <div className="border rounded-lg p-6 m-3">
+        <motion.div 
+        variants={item}
+        className="border rounded-lg p-6 m-3">
             <div className="flex">
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             {website && 
@@ -37,7 +50,7 @@ function ProjectCard({ title, description, tags, githubLink, website, link }: Pr
                     <img src={git} className="w-7"/>
                 </a>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
