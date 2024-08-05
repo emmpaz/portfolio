@@ -21,22 +21,20 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }) 
                     variants={container}
                     animate={inView ? 'visible' : 'hidden'}
                     className="w-1/2 max-w-xl min-w-80 flex flex-col items-center">
-                    {/* <Card
-                        title="Developer Support Engineer"
+                    <Card
+                        title="Associate Developer Support Engineer"
                         timeline="Aug. 2024 - Present"
                         bullets = {[
-                            "Developed coding problems and solutions for training multiple LLM coding chatbots for performing data analytics",
-                            "Evaluated code quality produced by AI models for correctness, performance, and helpfulness to the user",
-                            "Train models with languages including Python, Javascript, C++, NodeJS, ReactJS, and ExpressJS",
-                            "Participated in code reviews, making sure submissions were correct and followed style guidelines"
+                            "Loading.."
                         ]}
                         
                         location="Salt Lake City, UT"
                         company="Okta"
-                    /> */}
+                        inView={inView}
+                    />
                     <Card
                         title="Prompt Engineer"
-                        timeline="Dec. 2023 - Present"
+                        timeline="Dec. 2023 - Aug. 2024"
                         bullets={[
                             "Developed coding problems and solutions for training multiple LLM coding chatbots for performing data analytics",
                             "Evaluated code quality produced by AI models for correctness, performance, and helpfulness to the user",
