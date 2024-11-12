@@ -72,7 +72,7 @@ function Experience({ reference, inView }: { reference: any; inView: boolean }) 
                     />
                 </motion.div>
                 <div className="mt-10 sm:mt-0">
-                    <p>See <a href={resume} target="_blank" className=" underline">resume</a> for details</p>
+                    <p>see <a href={resume} target="_blank" className=" underline">resume</a> for details</p>
                 </div>
             </div>
         </motion.div>

@@ -10,8 +10,8 @@ function Contact({ reference, inView }: { reference: any; inView: boolean }){
         }}`} ref={reference}>
             <div className="h-full w-full flex-col flex sm:flex-row justify-center items-center text-slate-50 font-incon ">
                 <div className='p-2 w-2/3 max-w-96 min-w-80'>
-                    <p className="text-2xl py-2">Contact</p>
-                    <p className='text-sm'>Connect with me on Linkedin and follow my Spotify account to see what I listen to while coding, working out, on a plane</p>
+                    <p className="text-2xl py-2">contact</p>
+                    <p className='text-sm'>connect with me on linkedin and follow my spotify account to see what I listen to while coding, working out, on a plane or running</p>
                 </div>
                 <div className='sm:pl-2 sm:block flex justify-center items-center'>
                     <a href="https://open.spotify.com/user/mannypaz_" target='_blank'>
