@@ -14,14 +14,14 @@ function About({ reference, inView }: { reference: any; inView: boolean }) {
                     <h1 className='text-2xl text-center'>hello my name is emmanuel paz.</h1>
                     <div className="max-w-2xl pt-10">
                         <p className=" text-center">
-                            after graduating in May '23 from Iowa State with a degree in software engineering and a minor spanish,
-                            i am proud to start my software engineering career at okta as a DSA (Developer Support Associate).
+                            after graduating in May '23 from Iowa State with a degree in software engineering and a minor spanish, I am
+                            now living in Salt Lake City working as a swe.
                         </p>
                         <p className='pt-5 text-center'>
                             i enjoy full-stack developement, but I am currently focusing on gaining a deeper understanding in frontend developement (Next.js) and cloud deployment with CI/CD.
                         </p>
                         <p className="pt-5 text-center">
-                            i am from a small town from kansas but am currently in salt lake city 🏔️.
+                            i also own a small coffee shop in my hometown with my siblings called oasis coffee shop.
                             being first-generation college graduate has given me a unique drive to excel wherever I am.
                         </p>
                     </div>
